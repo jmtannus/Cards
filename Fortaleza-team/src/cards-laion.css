@@ -1,0 +1,88 @@
+.conteudo {
+  padding: 4em 2em;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  flex-wrap: wrap;
+  gap: 15px;
+  position: relative;
+  width: 100%;
+  height: 630px;
+}
+  
+.conteudo::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  opacity: 0.4;
+  background-image: url("https://pbs.twimg.com/media/FERQAULWQAQ_nwj.jpg:large");
+  background-repeat: no-repeat;
+  background-size: cover;
+  inset: 0;
+  height: 80vh;
+}
+
+  .jogador {
+    max-width: 20em;
+    margin: 1em;
+    border-radius: 10px;
+    background-color: rgba(250, 250, 250, 0.95);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    cursor: pinter;
+    transform: rotateY(180px);
+    background: linear-gradient(38deg, #c0c0c0, #f4f4f4);
+}
+  
+  .jogador__imagem {
+    max-height: 20em;
+    overflow: hidden;
+    background: linear-gradient(38deg, #000428, #004e92);
+    border-radius: 10px 10px 0 0;
+}
+ 
+  .jogador__imagem img {
+    object-fit: cover;
+    display: block;
+    //opacity: 0.4;
+    //filter: grayscale(100%);
+}
+  
+  .jogador__conteudo {
+    padding: 1em 1em 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .jogador__cabecalho {
+    border-bottom: 1px solid rgba(0, 78, 146, 0.2);
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: rgb(29, 59, 118);
+  }
+  
+  .jogador__nome {
+    margin: 0;
+   // color: #004e92;
+    color: #fff;
+    font-style: italic;
+  }
+  
+  .jogador__rodape {
+    background-color: #004e92;
+    color: white;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    margin-right: -1em;
+    margin-left: -1em;
+    margin-top: 1em;
+    padding: 0.8em;
+  }
+  
+  body {
+    background: linear-gradient(38deg, #000428, #004e92);
+  }
